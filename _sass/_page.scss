@@ -1,4 +1,43 @@
 #page
 {
-  @include outer-container(em(760));
+  @include outer-container(em(600));
+  font-size: $base-font-size;
+
+  p, h1, h2, h3
+  {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  p
+  {
+    @include margin(1em null null);
+    color: #555;
+  }
+
+  h1, h2, h3
+  {
+    @include margin(1em 0 0.2em);
+    color: #333;
+
+    & + p
+    {
+      @include margin(0 null null);
+    }
+  }
+
+  h1
+  {
+    @include margin(0 null null);
+    font-size: $heading-large;
+  }
+
+  h2
+  {
+    font-size: $heading-medium;
+  }
+
+  h3
+  {
+    font-size: $heading-small;
+  }
 }
