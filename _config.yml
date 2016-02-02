@@ -1,0 +1,18 @@
+# Site
+title: Dennis Madsen
+description: Programmer, Nerd, Gamer and Beardman.
+
+author:
+  name: Dennis Madsen
+  gravatar: 9eb485c7f86c5a196dd0232958ecbeea
+
+baseurl: '/'
+permalink: pretty
+timezone: Europe/Copenhagen
+
+# Build
+markdown: kramdown
+highlighter: rouge
+
+# Others
+exclude: [CNAME, Gemfile, LICENSE, README.md]
