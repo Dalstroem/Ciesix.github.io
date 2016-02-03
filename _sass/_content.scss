@@ -1,4 +1,54 @@
 #content
 {
   @include margin(null null 2em);
+
+  a
+  {
+    border-bottom: 1px solid #ccc;
+
+    &:hover
+    {
+      border-bottom: 1px solid #555;
+    }
+  }
+
+  #archive
+  {
+    h2:first-child
+    {
+      @include margin(0 null null);
+    }
+
+    .archive-item
+    {
+      @include margin(null null 0.3em);
+
+      .post-date
+      {
+        float: right;
+      }
+    }
+  }
+
+  .post-date
+  {
+    color: #bbb;
+  }
+
+  .highlighter-rouge
+  {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: auto;
+
+    *
+    {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .highlight
+    {
+      @include margin(1em 1.1em);
+    }
+  }
 }

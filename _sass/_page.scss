@@ -3,9 +3,9 @@
   @include outer-container(em(600));
   font-size: $base-font-size;
 
-  p, h1, h2, h3
+  *
   {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
   }
 
   p
@@ -39,6 +39,11 @@
   h3
   {
     font-size: $heading-small;
+  }
+
+  a
+  {
+    color: #333;
   }
 }
 
