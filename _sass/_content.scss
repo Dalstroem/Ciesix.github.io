@@ -12,6 +12,22 @@
     }
   }
 
+  ul, ol
+  {
+    @include margin(1em null null 1.5em);
+  }
+
+  ul li
+  {
+    list-style-type: disc;
+  }
+
+  ol li
+  {
+    list-style-type: decimal;
+  }
+
+
   #archive
   {
     h2:first-child
@@ -35,11 +51,12 @@
     color: #bbb;
   }
 
-  .highlighter-rouge
+  div.highlighter-rouge
   {
-    background-color: #eee;
+    background-color: #f8f8f8;
     border-radius: 5px;
     overflow: auto;
+    font-size: 0.8em;
 
     *
     {
@@ -50,5 +67,14 @@
     {
       @include margin(1em 1.1em);
     }
+  }
+
+  code.highlighter-rouge
+  {
+    @include padding(0.1em 0.3em);
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    color: #e87e04;
+    font-family: "Courier New", Courier, monospace;
   }
 }

@@ -5,13 +5,13 @@
 
   *
   {
+    color: #555;
     font-family: "PT Serif", Georgia, "Times New Roman", serif;
   }
 
   p
   {
     @include margin(1em null null);
-    color: #555;
   }
 
   h1, h2, h3
@@ -44,8 +44,7 @@
   a
   {
     color: #333;
-  }
-}
+  }}
 
 .clearfix
 {
