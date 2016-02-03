@@ -41,3 +41,10 @@
     font-size: $heading-small;
   }
 }
+
+.clearfix
+{
+  content: "";
+  display: block;
+  clear: both;
+}
