@@ -1,3 +1,80 @@
 #content
 {
+  @include margin(null null 2em);
+
+  a
+  {
+    border-bottom: 1px solid #ccc;
+
+    &:hover
+    {
+      border-bottom: 1px solid #555;
+    }
+  }
+
+  ul, ol
+  {
+    @include margin(1em null null 1.5em);
+  }
+
+  ul li
+  {
+    list-style-type: disc;
+  }
+
+  ol li
+  {
+    list-style-type: decimal;
+  }
+
+
+  #archive
+  {
+    h2:first-child
+    {
+      @include margin(0 null null);
+    }
+
+    .archive-item
+    {
+      @include margin(null null 0.3em);
+
+      .post-date
+      {
+        float: right;
+      }
+    }
+  }
+
+  .post-date
+  {
+    color: #bbb;
+  }
+
+  div.highlighter-rouge
+  {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 0.8em;
+
+    *
+    {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .highlight
+    {
+      @include margin(1em 1.1em);
+    }
+  }
+
+  code.highlighter-rouge
+  {
+    @include padding(0.1em 0.3em);
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    color: #e87e04;
+    font-family: "Courier New", Courier, monospace;
+  }
 }

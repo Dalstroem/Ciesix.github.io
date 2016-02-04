@@ -3,15 +3,15 @@
   @include outer-container(em(600));
   font-size: $base-font-size;
 
-  p, h1, h2, h3
+  *
   {
-    font-family: Georgia, "Times New Roman", serif;
+    color: #555;
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
   }
 
   p
   {
     @include margin(1em null null);
-    color: #555;
   }
 
   h1, h2, h3
@@ -40,4 +40,15 @@
   {
     font-size: $heading-small;
   }
+
+  a
+  {
+    color: #333;
+  }}
+
+.clearfix
+{
+  content: "";
+  display: block;
+  clear: both;
 }

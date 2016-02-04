@@ -1,10 +1,9 @@
 # Site
-title: Dennis Madsen
+title: Dalstroem
 description: Programmer, Nerd, Gamer and Beardman.
 
 author:
-  name: Dennis Madsen
-  gravatar: 9eb485c7f86c5a196dd0232958ecbeea
+  name: Dennis Dalstrøm
 
 baseurl: '/'
 permalink: pretty
@@ -12,7 +11,9 @@ timezone: Europe/Copenhagen
 
 # Build
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Others
 exclude: [CNAME, Gemfile, LICENSE, README.md]

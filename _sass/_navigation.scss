@@ -1,0 +1,23 @@
+#navigation
+{
+  float: right;
+
+  ul
+  {
+    li
+    {
+      @include margin(0 1em 0 0);
+      float: left;
+
+      &:last-child
+      {
+        @include margin(0);
+      }
+    }
+
+    a
+    {
+      display: block;
+    }
+  }
+}
