@@ -13,6 +13,8 @@ Drafts are posts without a date. They're posts you're still working on and don't
 
 The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 
+### Posts
+
 ```
 ---
 title: Some catchy title
@@ -26,6 +28,20 @@ tags: [csharp, web]
 - `layout` This should always be "post".
 - `date` Current danish date, time and timezone. Jekyll will take care of the rest.
 - `tags` List of keywords, used to find related posts.
+
+### Pages
+
+```
+---
+title: This is awesome!
+layout: page
+summary: This text is bigger then the rest.
+---
+```
+
+- `title` The page title, still no magic here.
+- `layout` This should always be "page".
+- `summary` Short text about the page. This is bigger.
 
 ## Publish a post
 
