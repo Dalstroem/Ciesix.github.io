@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% if site.posts.size > 0 %}
 <div id="archive">
 {% for post in site.posts  %}
   {% capture this_year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -18,3 +19,7 @@ layout: default
   {% endif %}
 {% endfor %}
 </div>
+{% else %}
+<h1>Coming soon</h1>
+<p>There are not much on this site yet. But you could stop by the <a href="{{ site.baseurl | append: 'about' }}">about</a> page, for a sneak peek!</p>
+{% endif %}
