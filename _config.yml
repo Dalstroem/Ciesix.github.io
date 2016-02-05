@@ -9,6 +9,8 @@ baseurl: '/'
 permalink: pretty
 timezone: Europe/Copenhagen
 
+google_analytics: UA-67502425-2
+
 # Build
 markdown: kramdown
 kramdown:
