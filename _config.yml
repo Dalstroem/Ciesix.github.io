@@ -17,5 +17,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+environment: production
+
 # Others
-exclude: [CNAME, Gemfile, LICENSE, README.md]
+exclude: [CNAME, Gemfile, jekyll-serve, LICENSE, README.md]
