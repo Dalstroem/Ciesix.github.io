@@ -1,11 +1,11 @@
 <header id="header">
-  <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+  <h1><a href="{{ site.url | append: site.baseurl }}">{{ site.name }}</a></h1>
 
   <nav id="navigation">
     <ul>
-      <li><a href="{{ site.baseurl }}">Home</a></li>
-      <li><a href="{{ site.baseurl | append: 'about' }}">About</a></li>
-      <li><del>Subscribe</del></li>
+      <li><a href="{{ site.url | append: site.baseurl }}">Home</a></li>
+      <li><a href="{{ site.url | append: site.baseurl }}about">About</a></li>
+      <li><a href="{{ site.url | append: site.baseurl }}feed.xml">Subscribe</a></li>
     </ul>
   </nav>
 

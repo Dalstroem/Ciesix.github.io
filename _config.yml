@@ -1,10 +1,11 @@
 # Site
-title: Dalstroem
+name: Dalstroem
 description: Programmer, Nerd, Gamer and Beardman.
 
 author:
   name: Dennis Dalstrøm
 
+url: http://dalstroem.com
 baseurl: '/'
 permalink: pretty
 timezone: Europe/Copenhagen
@@ -20,4 +21,6 @@ kramdown:
 environment: production
 
 # Others
+gems: [jekyll-feed]
+
 exclude: [CNAME, Gemfile, jekyll-serve, LICENSE, README.md]

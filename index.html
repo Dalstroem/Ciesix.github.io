@@ -11,7 +11,7 @@ layout: default
   <h2>{{ this_year }}</h2>
   {% endif %}
   <div class="archive-item">
-    <a href="{{ site.baseurl | append: post.url | replace: '//', '/' }}">{{ post.title }}</a>
+    <a href="{{ site.url | append: site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
     <time class="post-date" datetime="{{ post.date }}">{{ post.date | date: '%-d. %B %Y' | downcase }}</time>
   </div>
   {% if forloop.last == false and this_year != next_year %}
@@ -21,5 +21,5 @@ layout: default
 </div>
 {% else %}
 <h1>Coming soon</h1>
-<p>There are not much on this site yet. But you could stop by the <a href="{{ site.baseurl | append: 'about' }}">about</a> page, for a sneak peek!</p>
+<p>There are not much on this site yet. But you could stop by the <a href="{{ site.url | append: site.baseurl }}about">about</a> page, for a sneak peek!</p>
 {% endif %}
