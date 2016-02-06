@@ -19,4 +19,4 @@ In case you were wondering, this site is:
 - Build on [Jekyll](https://jekyllrb.com/), simple, blog-aware, static sites.
 - Hosted on [GitHub Pages](https://pages.github.com/).
 
-Have a question for me? Feel free to ask me on [Twitter](https://twitter.com/Ciesix).
+Have a question for me? Feel free to ask me on [Twitter](https://twitter.com/Dalstroem).
