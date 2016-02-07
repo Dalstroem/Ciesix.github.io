@@ -77,4 +77,20 @@
     color: #e87e04;
     font-family: "Courier New", Courier, monospace;
   }
+
+  #disqus_thread
+  {
+    @include padding(2em 0 0);
+    text-align: center;
+
+    &:before
+    {
+      content: "";
+      display: block;
+      width: 300px;
+      height: 1px;
+      margin: 0 auto 3em;
+      background-color: #eee;
+    }
+  }
 }
