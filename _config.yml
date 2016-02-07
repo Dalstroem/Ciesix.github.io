@@ -12,6 +12,9 @@ timezone: Europe/Copenhagen
 
 google_analytics: UA-67502425-2
 
+disqus:
+  shortname: dalstroem
+
 # Build
 markdown: kramdown
 kramdown:
