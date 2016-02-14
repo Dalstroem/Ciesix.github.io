@@ -2,10 +2,10 @@
 {
   @include outer-container(em(600));
   font-size: $base-font-size;
+  color: #555;
 
   *
   {
-    color: #555;
     font-family: "PT Serif", Georgia, "Times New Roman", serif;
   }
 
