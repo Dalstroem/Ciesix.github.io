@@ -1,7 +1,7 @@
 ---
 title: Clean Visual Studio solution with PowerShell
 layout: post
-date: 2016-02-14 11:37:24 +0100
+date: 2016-02-14 10:37:24 +0000
 tags: [visual studio, powershell]
 ---
 Sometimes when I work in Visual Studio, I need to remove all unnecessary files and folders from a solution. But unfortunately there are no build-in feature to do this. The closest option is the "Clean solution", but as you may know, this only cleans the content in the `bin` folder.
