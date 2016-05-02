@@ -14,24 +14,22 @@ xmlns:sharedConverter="clr-namespace:SharedLibrary.Converter"
 
 Having multiple XML namespaces (aliases) for basically the same thing, is a real pain and messy. Of cause you could just move all classes to the shared library for better control, but this is also bad if there are application specific classes involved, and in the end nothing is fixed.
 
-This is where the `XmlnsDefinition` attribute comes in.
+While I was looking for a solution, I found the [XmlnsDefinitionAttribute](https://msdn.microsoft.com/en-us/library/system.windows.markup.xmlnsdefinitionattribute(v=vs.110).aspx) class. With it, it allowes you to map multiple namespaces to a single (or multiple) XAML identifier, that you then can use in you XAML files.
 
-```csharp
-public XmlnsDefinitionAttribute(string xmlNamespace, string clrNamespace)
+## Attribute usage
+
+The XmlnsDefinition attribute has one constructor that takes to string parameters:
+
+- `xmlNamespace` The XAML namespace identifier.
+- `clrNamespace` A string that references a CLR namespace name.
+
+_How to use the XmlnsDefinition attribute?_
+
 ```
-
-The `xmlNamespace` is the namespace identifier used in the XAML file, and `clrNamespace` is a reference to a CLR namespace name.
-
-If you add the following code-snippet to the `AssemblyInfo.cs` file of the shared library, you can map multiple namespaces into a single XML namespace that you can use in your XAML files.
-
-```csharp
-[assembly: XmlnsDefinition("http://dalstroem.com", "SharedLibrary")]
 [assembly: XmlnsDefinition("http://dalstroem.com", "SharedLibrary.Controls")]
 [assembly: XmlnsDefinition("http://dalstroem.com", "SharedLibrary.Converter")]
 ```
 
-In the example above, my XAML identifier is "http://dalstroem.com" and when it is used in a XAML file like this:
+## Limitations
 
-```
-xmlns:core="http://dalstroem.com"
-```
+Because of the way a project is build, the XAML identifier cannot be used in the local assembly. You can only use identifiers from another assemblies, because XAML files must be parsed before the assembly is build.
