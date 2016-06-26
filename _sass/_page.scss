@@ -1,6 +1,6 @@
 #page
 {
-  @include outer-container(em(600));
+  @include outer-container($max-width);
   font-size: $base-font-size;
   color: #555;
 
