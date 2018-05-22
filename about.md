@@ -1,7 +1,7 @@
 ---
 title: About
 layout: page
-summary: Currently programmer at <a href="http://miralix.com">Miralix</a>. Avid gamer and proud member of the PC master race.
+summary: Currently programmer at <a href="https://miralix.com">Miralix</a>. Avid gamer and proud member of the PC master race.
 ---
 My name is Dennis Dalstrøm, and this is my personal blog. Here I write about programming, software development and other awesome things.
 
@@ -15,7 +15,7 @@ The purpose of this blog, is to be a conduit. A way for me to write about all th
 
 In case you were wondering, this site is:
 
-- Coded with [Bourbon](http://bourbon.io/), [Neat](http://neat.bourbon.io/) and [Bitters](http://bitters.bourbon.io/).
+- Coded with [Bourbon](https://bourbon.io/), [Neat](https://neat.bourbon.io/) and [Bitters](https://bitters.bourbon.io/).
 - Build on [Jekyll](https://jekyllrb.com/), simple, blog-aware, static sites.
 - Hosted on [GitHub Pages](https://pages.github.com/).
 

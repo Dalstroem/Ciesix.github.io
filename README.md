@@ -4,8 +4,8 @@ This is my personal blog, where I write about programming, software development 
 
 ## Setup
 
-1. Install [Jekyll](http://jekyllrb.com/)
-2. Install [Bundler](http://bundler.io/)
+1. Install [Jekyll](https://jekyllrb.com/)
+2. Install [Bundler](https://bundler.io/)
 3. Fork this repository
 4. Edit `_config.yml` with your information
 5. Run `bundle install`
